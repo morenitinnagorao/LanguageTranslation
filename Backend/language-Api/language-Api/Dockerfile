@@ -3,10 +3,6 @@ FROM maven:3.9.4-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean install -DskipTests
-<<<<<<< HEAD
-=======
-
->>>>>>> d864027 (Update Dockerfile)
 
 # Use lightweight Java runtime to run the app
 FROM eclipse-temurin:17-jre
